@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
+import Flat from './flatlist';
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
+   
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!ssssssssssssssss</Text>
-      <StatusBar style="auto" />
+
+<Flat/>
+      <Text selectionColor={'green'}>Open up App.js to start working on your app!ssssssssssssssss</Text>
+      {/* <StatusBar style="auto" /> */}
     </View>
   );
 }
@@ -14,8 +18,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    backgroundColor: `rgba(120,120, 174,0.8)`,
+    alignItems: 'center',
+    justifyContent: 'center'
+    // color: 'yellow'
+    
   },
 });
